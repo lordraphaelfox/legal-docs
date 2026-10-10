@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sinete · Press kit</title>
+<meta name="description" content="Sinete is a two-player duel of negotiation and bluff. Two brothers split a dead king&#x27;s estate, and the one who ends up with the most land can still lose the crown.">
+<meta property="og:title" content="Sinete · Press kit">
+<meta property="og:description" content="Sinete is a two-player duel of negotiation and bluff. Two brothers split a dead king&#x27;s estate, and the one who ends up with the most land can still lose the crown.">
+<meta property="og:image" content="https://lordraphaelfox.github.io/legal-docs/sinete/presskit/img/logo/sinete_banner_1024x500.png">
+<link rel="icon" href="img/logo/sinete_icon_512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@700&family=Grenze:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #14161c; --panel: #1e2230; --panel-soft: #262b3b; --text: #e8e6df; --dim: #9aa0b4;
+  --accent: #d9a441; --accent-ink: #14161c; --line: #2e3446;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f2efe6; --panel: #e8e3d5; --panel-soft: #ddd6c4; --text: #1e2230; --dim: #5d6274;
+    --accent: #8a6522; --accent-ink: #f2efe6; --line: #cfc7b2; color-scheme: light;
+  }
+}
+* { box-sizing: border-box; }
+html { background: var(--bg); }
+body { margin: 0; background: var(--bg); color: var(--text); font: 18px/1.55 "Grenze", Georgia, serif; }
+a { color: var(--accent); }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 16px 16px 64px; }
+.topbar { display: flex; justify-content: flex-end; gap: 6px; padding: 4px 0 8px; }
+.topbar button { font: 600 15px "Grenze", serif; background: var(--panel); color: var(--dim); border: 1px solid var(--line); border-radius: 6px; padding: 6px 12px; cursor: pointer; }
+.topbar button[aria-pressed="true"] { color: var(--text); border-color: var(--accent); }
+h1, h2 { font-family: "Grenze Gotisch", "Grenze", serif; font-weight: 700; letter-spacing: .01em; line-height: 1.1; }
+h1 { font-size: clamp(56px, 9vw, 96px); margin: 0; color: var(--accent); }
+h2 { font-size: 32px; margin: 40px 0 12px; color: var(--accent); }
+.hero { display: grid; grid-template-columns: minmax(0, 300px) 1fr; gap: 32px; align-items: center; padding: 16px 0 8px; }
+.emblem { width: 100%; height: auto; }
+.kicker { margin: 0; text-transform: uppercase; letter-spacing: .14em; font-size: 14px; color: var(--dim); }
+.tagline { margin: 4px 0 16px; font-size: 24px; }
+.short { font-size: 20px; max-width: 46ch; margin: 0 0 20px; }
+.button { display: inline-block; background: var(--accent); color: var(--accent-ink); text-decoration: none; font: 600 19px "Grenze", serif; padding: 10px 20px; border-radius: 8px; }
+.button span { font-weight: 400; opacity: .8; font-size: 16px; }
+.note { color: var(--dim); font-size: 15px; margin: 6px 0 12px; }
+.cols { display: grid; grid-template-columns: 320px minmax(0, 1fr); gap: 40px; align-items: start; }
+.facts { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 4px 20px 16px; position: sticky; top: 16px; }
+.facts h2 { margin-top: 16px; }
+dl { margin: 0; }
+.facts dl div { padding: 8px 0; border-top: 1px solid var(--line); }
+dt { color: var(--dim); font-size: 14px; text-transform: uppercase; letter-spacing: .08em; }
+dd { margin: 2px 0 0; }
+.about p { max-width: 64ch; }
+.features { padding-left: 1.1em; max-width: 64ch; }
+.features li { margin: 4px 0; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+figure { margin: 0; }
+figure img { display: block; width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--line); background: var(--panel); }
+figcaption { font-size: 15px; color: var(--dim); margin-top: 6px; }
+.art figure.wide { grid-column: 1 / -1; }
+.nobles { grid-column: 1 / -1; margin-top: -8px; }
+.art figure:not(.wide) img { aspect-ratio: 4 / 5; object-fit: cover; }
+.logos figure img { aspect-ratio: 16 / 10; object-fit: contain; padding: 16px; background: var(--panel-soft); }
+.cols2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.team div { padding: 6px 0; }
+.mail { font-size: 22px; overflow-wrap: anywhere; }
+.based { border-top: 1px solid var(--line); margin-top: 48px; color: var(--dim); font-size: 16px; }
+.based h2 { font-size: 24px; color: var(--dim); }
+.based p { max-width: 80ch; }
+.video { aspect-ratio: 16 / 9; }
+.video iframe { width: 100%; height: 100%; border: 0; border-radius: 8px; }
+html:not([data-l="pt"]) .langblock[data-l="pt"], html[data-l="pt"] .langblock[data-l="en"] { display: none; }
+@media (max-width: 820px) {
+  .hero, .cols, .cols2 { grid-template-columns: minmax(0, 1fr); }
+  .hero { gap: 8px; }
+  .emblem { max-width: 200px; }
+  .facts { position: static; }
+  .gallery { grid-template-columns: minmax(0, 1fr); }
+}
+</style>
+<script>
+(function () {
+  var h = location.hash, l = h === "#pt" ? "pt" : h === "#en" ? "en" :
+    ((navigator.language || "").toLowerCase().indexOf("pt") === 0 ? "pt" : "en");
+  document.documentElement.setAttribute("data-l", l);
+  document.documentElement.lang = l === "pt" ? "pt-BR" : "en";
+})();
+</script>
+</head>
+<body>
+<div class="wrap">
+<nav class="topbar" aria-label="Language">
+  <button type="button" data-set="en">English</button>
+  <button type="button" data-set="pt">Português</button>
+</nav>
+<div class="langblock" lang="en" data-l="en">
+<header class="hero">
+  <img class="emblem" src="img/logo/sinete_logo.png" alt="Sinete" width="616" height="597">
+  <div class="hero-text">
+    <p class="kicker">Press kit</p>
+    <h1>Sinete</h1>
+    <p class="tagline">Power is not seized. It is negotiated.</p>
+    <p class="short">Sinete is a two-player duel of negotiation and bluff. Two brothers split a dead king&#x27;s estate, and the one who ends up with the most land can still lose the crown.</p>
+    <a class="button" href="sinete_presskit.zip">Download everything <span>.zip · 18.4 MB</span></a>
+    <p class="note">Logos, screenshots, art and texts</p>
+  </div>
+</header>
+<div class="cols">
+  <aside class="facts"><h2>Facts</h2><dl>
+<div><dt>Developer</dt><dd>Inuman Games, Brazil</dd></div>
+<div><dt>Platforms</dt><dd>Android (Google Play, closed test)<br>PC on Steam, 2027</dd></div>
+<div><dt>Price</dt><dd>Free on Android, with no ads and no in-app purchases<br>US$ 4.99 on Steam</dd></div>
+<div><dt>Players</dt><dd>2: against the computer, on one device or online</dd></div>
+<div><dt>Match length</dt><dd>10 to 15 minutes</dd></div>
+<div><dt>Online</dt><dd>Asynchronous. Online between PC and Android is planned for the Steam release</dd></div>
+<div><dt>Languages</dt><dd>English, Brazilian Portuguese</dd></div>
+<div><dt>Engine</dt><dd>Godot 4</dd></div>
+<div><dt>Android test</dt><dd><a href="https://forms.gle/KvqrP6Pwb3jBmpzw5">Sign up for the closed test</a></dd></div>
+<div><dt>Contact</dt><dd><a href="mailto:support@inuman.com.br">support@inuman.com.br</a></dd></div>
+  </dl></aside>
+  <section class="about"><h2>About the game</h2>
+<p>The king of Poictesme died without naming an heir. His two closest relatives sit across a table with his inventory open between them: 21 deeds to strongholds, harbours, granaries, abbeys, fairs, vineyards and mines. Each kind of land answers to one of 7 nobles, and each noble swears loyalty to the brother who hands over more of it.</p>
+<p>Every day each brother plays 4 acts, once each. Some are simple. You keep a deed hidden, or take 2 out of the day. Others put the choice in your brother&#x27;s hands. You show him 3 deeds, he picks 1 for himself and the other 2 are yours. Show the wrong 3 and you&#x27;ve just paid for his best noble. The oaths of 4 nobles win the match, and so do 11 points of influence. A match takes 10 to 15 minutes.</p>
+<p>Which 4 acts? That&#x27;s up to Horvendile, the Arbiter. He opens each day by reading one of 8 formulas, never the one from the day before, so the plan you made last night may not survive the morning. Practice mode lets you learn one formula at a time against the computer.</p>
+<p>The computer has 4 levels. The strongest, The Sharer, plays out the whole day in its head before every act, and won 64% of 1,280 test matches against Hard. You can also pass the phone across the sofa, or play online on your own schedule. You get a notice when it&#x27;s your turn, and a conclave key sends a private match to whoever you want to play. Merle, the dead king&#x27;s fool, teaches the game in a scripted two-day tutorial and will point out a move when you ask, 3 times a day.</p>
+<p>No ads and nothing to buy on Android. Made in Brazil, in English and Brazilian Portuguese.</p>
+    <h2>Features</h2><ul class="features">
+<li>8 formulas, and the Arbiter draws a new one every day. In Practice you pick one and keep it.</li>
+<li>A computer opponent with 4 levels, from Easy to The Sharer.</li>
+<li>Online at your own pace, with notices on your phone or by email. Public partitions count for the Renown ranking. Conclaves are private and open with a key.</li>
+<li>Two players on one device, with the table covered at each handover.</li>
+<li>A two-day tutorial led by Merle, and his advice on demand in matches against the computer.</li>
+<li>English and Brazilian Portuguese.</li>
+<li>No ads and no in-app purchases.</li>
+    </ul>
+  </section>
+</div>
+<!-- Video: quando o clip existir, descomente e troque VIDEO_ID (YouTube).
+<section><h2>Video</h2><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="Sinete" allowfullscreen loading="lazy"></iframe></div></section>
+-->
+<section><h2>Screenshots</h2><p class="note">1920×1080 PNG. Click for the full size.</p><div class="gallery">
+<figure><a href="img/screens/en/sinete_en_01_table.png"><img src="img/thumbs/en/sinete_en_01_table.jpg" alt="Day 2: an Offer of 4 deeds, ready to show" loading="lazy" width="960" height="540"></a><figcaption>Day 2: an Offer of 4 deeds, ready to show</figcaption></figure>
+<figure><a href="img/screens/en/sinete_en_02_answer.png"><img src="img/thumbs/en/sinete_en_02_answer.jpg" alt="Answering your brother: he showed 3, you take 2 out of the day" loading="lazy" width="960" height="540"></a><figcaption>Answering your brother: he showed 3, you take 2 out of the day</figcaption></figure>
+<figure><a href="img/screens/en/sinete_en_03_arbiter.png"><img src="img/thumbs/en/sinete_en_03_arbiter.jpg" alt="Horvendile reads the formula of the day" loading="lazy" width="960" height="540"></a><figcaption>Horvendile reads the formula of the day</figcaption></figure>
+<figure><a href="img/screens/en/sinete_en_04_merle.png"><img src="img/thumbs/en/sinete_en_04_merle.jpg" alt="Merle points out a move" loading="lazy" width="960" height="540"></a><figcaption>Merle points out a move</figcaption></figure>
+<figure><a href="img/screens/en/sinete_en_05_day_end.png"><img src="img/thumbs/en/sinete_en_05_day_end.jpg" alt="End of the day: the oaths change hands" loading="lazy" width="960" height="540"></a><figcaption>End of the day: the oaths change hands</figcaption></figure>
+<figure><a href="img/screens/en/sinete_en_06_online.png"><img src="img/thumbs/en/sinete_en_06_online.jpg" alt="Online lobby" loading="lazy" width="960" height="540"></a><figcaption>Online lobby</figcaption></figure>
+<figure><a href="img/screens/en/sinete_en_07_title.png"><img src="img/thumbs/en/sinete_en_07_title.jpg" alt="Title screen" loading="lazy" width="960" height="540"></a><figcaption>Title screen</figcaption></figure>
+</div></section>
+<section><h2>Art</h2><p class="note">The noble cards are drawn by the game itself. Click for the full size.</p><div class="gallery art">
+<figure class="wide"><a href="img/art/en/sinete_en_nobles.png"><img src="img/thumbs/en/sinete_en_nobles.jpg" alt="The 7 nobles" loading="lazy"></a><figcaption>The 7 nobles · 1908×396</figcaption></figure>
+<p class="nobles note">One card at a time, 699×1023: <a href="img/art/en/sinete_en_noble_1.png">Guivric</a> · <a href="img/art/en/sinete_en_noble_2.png">Kerin</a> · <a href="img/art/en/sinete_en_noble_3.png">Miramon</a> · <a href="img/art/en/sinete_en_noble_4.png">Gonfal</a> · <a href="img/art/en/sinete_en_noble_5.png">Ysabeau</a> · <a href="img/art/en/sinete_en_noble_6.png">Pellinore</a> · <a href="img/art/en/sinete_en_noble_7.png">Aldric</a></p>
+<figure><a href="img/art/sinete_art_arbiter.png"><img src="img/thumbs/sinete_art_arbiter.jpg" alt="Horvendile, the Arbiter" loading="lazy"></a><figcaption>Horvendile, the Arbiter · 716×944</figcaption></figure>
+<figure><a href="img/art/sinete_art_merle.png"><img src="img/thumbs/sinete_art_merle.jpg" alt="Merle, the dead king&#x27;s fool" loading="lazy"></a><figcaption>Merle, the dead king&#x27;s fool · 716×944</figcaption></figure>
+<figure><a href="img/art/sinete_art_intro_1.jpg"><img src="img/thumbs/sinete_art_intro_1.jpg" alt="Introduction, 1" loading="lazy"></a><figcaption>Introduction, 1 · 1195×896</figcaption></figure>
+<figure><a href="img/art/sinete_art_intro_2.png"><img src="img/thumbs/sinete_art_intro_2.jpg" alt="Introduction, 2" loading="lazy"></a><figcaption>Introduction, 2 · 1024×1024</figcaption></figure>
+<figure><a href="img/art/sinete_art_card_back.png"><img src="img/thumbs/sinete_art_card_back.jpg" alt="Card back" loading="lazy"></a><figcaption>Card back · 820×1200</figcaption></figure>
+</div></section>
+<section><h2>Logos</h2><div class="gallery logos">
+<figure class="logo"><a href="img/logo/sinete_logo.png"><img src="img/logo/sinete_logo.png" alt="Sinete logo, transparent" loading="lazy"></a><figcaption>Sinete logo, transparent · 616×597</figcaption></figure>
+<figure class="logo"><a href="img/logo/sinete_icon_512.png"><img src="img/logo/sinete_icon_512.png" alt="App icon" loading="lazy"></a><figcaption>App icon · 512×512</figcaption></figure>
+<figure class="logo"><a href="img/logo/sinete_banner_1024x500.png"><img src="img/logo/sinete_banner_1024x500.png" alt="Banner" loading="lazy"></a><figcaption>Banner · 1024×500</figcaption></figure>
+<figure class="logo"><a href="img/logo/inuman_games_logo.png"><img src="img/logo/inuman_games_logo.png" alt="Inuman Games logo, transparent" loading="lazy"></a><figcaption>Inuman Games logo, transparent · 850×1130</figcaption></figure>
+</div></section>
+<section class="cols2">
+  <div><h2>Studio and team</h2><p>Inuman Games is an independent studio from Brazil.</p><dl class="team">
+<div><dt>Concept, adaptation, code and production</dt><dd>Rapha Gonçalves</dd></div>
+<div><dt>Story and writing</dt><dd>Rapha Gonçalves and Rodrigo Gonçalves</dd></div>
+<div><dt>Design and art direction</dt><dd>TG Studio, directed by Thiago Paulino</dd></div>
+  </dl></div>
+  <div><h2>Contact</h2><p>Press, creators and keys:<br><a class="mail" href="mailto:support@inuman.com.br">support@inuman.com.br</a></p></div>
+</section>
+<section class="based"><h2>Based on</h2>
+<p>Poictesme, the Fellowship of the Silver Stallion and Horvendile are James Branch Cabell&#x27;s (1879-1958), a writer from Richmond, Virginia. Poictesme is a province on no map of France, and Cabell spread the line of Dom Manuel, who ruled it, across 18 volumes. The Fellowship comes from The Silver Stallion, of 1926, and Horvendile crosses those books without ageing, impartial by trade. The most read of them, Jurgen, was prosecuted for obscenity in New York in 1920, and the case fell apart two years later. Cabell filled the 1920s and was then forgotten. His work is in the public domain in the United States.</p>
+<p>Sinete&#x27;s mechanics come from Hanamikoji, the board game by Kota Nakayama published by EmperorS4, and from its seven mini-expansions.</p>
+<p>The partition of Poictesme is ours, and so are the cards, the writing, the four machine levels, the online play and Classic mode, which draws the Arbiter&#x27;s formula anew each day.</p>
+<p>Sinete is an independent game. It has no connection to Kota Nakayama or EmperorS4, and neither of them endorses it. The Hanamikoji name belongs to its owners.</p>
+</section>
+</div>
+<div class="langblock" lang="pt-BR" data-l="pt">
+<header class="hero">
+  <img class="emblem" src="img/logo/sinete_logo.png" alt="Sinete" width="616" height="597">
+  <div class="hero-text">
+    <p class="kicker">Press kit</p>
+    <h1>Sinete</h1>
+    <p class="tagline">O poder não se toma. Negocia-se.</p>
+    <p class="short">Sinete é um duelo de negociação e blefe para 2 jogadores. Dois irmãos repartem a herança de um rei morto, e quem fica com mais terras ainda pode perder a coroa.</p>
+    <a class="button" href="sinete_presskit.zip">Baixar tudo <span>.zip · 18.4 MB</span></a>
+    <p class="note">Logos, capturas, arte e textos</p>
+  </div>
+</header>
+<div class="cols">
+  <aside class="facts"><h2>Ficha</h2><dl>
+<div><dt>Desenvolvedora</dt><dd>Inuman Games, Brasil</dd></div>
+<div><dt>Plataformas</dt><dd>Android (Google Play, teste fechado)<br>PC na Steam, 2027</dd></div>
+<div><dt>Preço</dt><dd>Grátis no Android, sem anúncio e sem compra dentro do jogo<br>US$ 4,99 na Steam</dd></div>
+<div><dt>Jogadores</dt><dd>2: contra a máquina, no mesmo aparelho ou online</dd></div>
+<div><dt>Duração da partida</dt><dd>De 10 a 15 minutos</dd></div>
+<div><dt>Online</dt><dd>Assíncrono. O online entre PC e Android está previsto para o lançamento na Steam</dd></div>
+<div><dt>Idiomas</dt><dd>Português, inglês</dd></div>
+<div><dt>Motor</dt><dd>Godot 4</dd></div>
+<div><dt>Teste no Android</dt><dd><a href="https://forms.gle/KvqrP6Pwb3jBmpzw5">Inscreva-se no teste fechado</a></dd></div>
+<div><dt>Contato</dt><dd><a href="mailto:support@inuman.com.br">support@inuman.com.br</a></dd></div>
+  </dl></aside>
+  <section class="about"><h2>Sobre o jogo</h2>
+<p>O rei de Poictesme morreu sem dizer o nome de um herdeiro. Os dois parentes mais próximos sentam frente a frente com o inventário dele aberto na mesa: 21 escrituras de fortificações, portos, celeiros, abadias, feiras, vinhedos e minas. Cada tipo de terra responde a um dos 7 nobres, e cada nobre jura lealdade ao irmão que lhe entregar mais do que é seu.</p>
+<p>A cada dia, cada irmão joga os 4 atos do dia, cada um uma vez. Alguns são simples. Você guarda uma escritura oculta, ou tira 2 do dia. Outros põem a escolha na mão do seu irmão. Você mostra 3 escrituras, ele fica com 1 e as outras 2 são suas. Mostrou as 3 erradas e acabou de pagar pelo melhor nobre dele. Vence quem tiver o juramento de 4 nobres, ou 11 de influência. Uma partida leva de 10 a 15 minutos.</p>
+<p>Quais 4 atos? Quem decide é Horvendile, o Partidor. Ele abre cada dia lendo uma de 8 fórmulas, nunca a do dia anterior, e o plano feito ontem à noite pode não sobreviver à manhã. No modo Treino dá para aprender uma fórmula de cada vez contra a máquina.</p>
+<p>A máquina tem 4 níveis. O mais forte, o Partilhador, joga o dia inteiro na cabeça antes de cada ato e venceu o Difícil em 64% de 1.280 partidas de teste. Também dá para passar o celular para quem está do lado no sofá, ou jogar online no seu tempo. Chega um aviso quando é a sua vez, e a chave de um conclave leva uma partilha fechada a quem você quiser chamar. Merle, o bobo do rei morto, ensina o jogo num tutorial roteirizado de 2 dias e aponta uma jogada quando você pede, 3 vezes por dia.</p>
+<p>Sem anúncio e sem nada para comprar no Android. Feito no Brasil, em português e inglês.</p>
+    <h2>Destaques</h2><ul class="features">
+<li>8 fórmulas, e o Partidor sorteia uma nova a cada dia. No Treino você escolhe uma e fica com ela.</li>
+<li>Máquina com 4 níveis, do Fácil ao Partilhador.</li>
+<li>Online no ritmo de cada um, com aviso no celular ou por e-mail. A partilha pública conta para o ranking de Renome. O conclave é fechado e abre com uma chave.</li>
+<li>Dois jogadores no mesmo aparelho, com a mesa coberta a cada passagem.</li>
+<li>Tutorial de 2 dias conduzido por Merle, e o conselho dele sob pedido nas partidas contra a máquina.</li>
+<li>Português e inglês.</li>
+<li>Sem anúncio e sem compra dentro do jogo.</li>
+    </ul>
+  </section>
+</div>
+<!-- Vídeo: quando o clip existir, descomente e troque VIDEO_ID (YouTube).
+<section><h2>Vídeo</h2><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="Sinete" allowfullscreen loading="lazy"></iframe></div></section>
+-->
+<section><h2>Capturas</h2><p class="note">PNG em 1920×1080. Clique para o tamanho original.</p><div class="gallery">
+<figure><a href="img/screens/pt/sinete_pt_01_table.png"><img src="img/thumbs/pt/sinete_pt_01_table.jpg" alt="Dia 2: um Ofertar de 4 escrituras, pronto para mostrar" loading="lazy" width="960" height="540"></a><figcaption>Dia 2: um Ofertar de 4 escrituras, pronto para mostrar</figcaption></figure>
+<figure><a href="img/screens/pt/sinete_pt_02_answer.png"><img src="img/thumbs/pt/sinete_pt_02_answer.jpg" alt="Respondendo ao irmão: ele mostrou 3, você tira 2 do dia" loading="lazy" width="960" height="540"></a><figcaption>Respondendo ao irmão: ele mostrou 3, você tira 2 do dia</figcaption></figure>
+<figure><a href="img/screens/pt/sinete_pt_03_arbiter.png"><img src="img/thumbs/pt/sinete_pt_03_arbiter.jpg" alt="Horvendile lê a fórmula do dia" loading="lazy" width="960" height="540"></a><figcaption>Horvendile lê a fórmula do dia</figcaption></figure>
+<figure><a href="img/screens/pt/sinete_pt_04_merle.png"><img src="img/thumbs/pt/sinete_pt_04_merle.jpg" alt="Merle aponta uma jogada" loading="lazy" width="960" height="540"></a><figcaption>Merle aponta uma jogada</figcaption></figure>
+<figure><a href="img/screens/pt/sinete_pt_05_day_end.png"><img src="img/thumbs/pt/sinete_pt_05_day_end.jpg" alt="Fim do dia: os juramentos mudam de lado" loading="lazy" width="960" height="540"></a><figcaption>Fim do dia: os juramentos mudam de lado</figcaption></figure>
+<figure><a href="img/screens/pt/sinete_pt_06_online.png"><img src="img/thumbs/pt/sinete_pt_06_online.jpg" alt="Lobby do online" loading="lazy" width="960" height="540"></a><figcaption>Lobby do online</figcaption></figure>
+<figure><a href="img/screens/pt/sinete_pt_07_title.png"><img src="img/thumbs/pt/sinete_pt_07_title.jpg" alt="Tela de título" loading="lazy" width="960" height="540"></a><figcaption>Tela de título</figcaption></figure>
+</div></section>
+<section><h2>Arte</h2><p class="note">Os cartões dos nobres saem do próprio jogo. Clique para o tamanho original.</p><div class="gallery art">
+<figure class="wide"><a href="img/art/pt/sinete_pt_nobles.png"><img src="img/thumbs/pt/sinete_pt_nobles.jpg" alt="Os 7 nobres" loading="lazy"></a><figcaption>Os 7 nobres · 1908×396</figcaption></figure>
+<p class="nobles note">Um cartão por vez, 699×1023: <a href="img/art/pt/sinete_pt_noble_1.png">Guivric</a> · <a href="img/art/pt/sinete_pt_noble_2.png">Kerin</a> · <a href="img/art/pt/sinete_pt_noble_3.png">Miramon</a> · <a href="img/art/pt/sinete_pt_noble_4.png">Gonfal</a> · <a href="img/art/pt/sinete_pt_noble_5.png">Ysabeau</a> · <a href="img/art/pt/sinete_pt_noble_6.png">Pellinore</a> · <a href="img/art/pt/sinete_pt_noble_7.png">Aldric</a></p>
+<figure><a href="img/art/sinete_art_arbiter.png"><img src="img/thumbs/sinete_art_arbiter.jpg" alt="Horvendile, o Partidor" loading="lazy"></a><figcaption>Horvendile, o Partidor · 716×944</figcaption></figure>
+<figure><a href="img/art/sinete_art_merle.png"><img src="img/thumbs/sinete_art_merle.jpg" alt="Merle, o bobo do rei morto" loading="lazy"></a><figcaption>Merle, o bobo do rei morto · 716×944</figcaption></figure>
+<figure><a href="img/art/sinete_art_intro_1.jpg"><img src="img/thumbs/sinete_art_intro_1.jpg" alt="Introdução, 1" loading="lazy"></a><figcaption>Introdução, 1 · 1195×896</figcaption></figure>
+<figure><a href="img/art/sinete_art_intro_2.png"><img src="img/thumbs/sinete_art_intro_2.jpg" alt="Introdução, 2" loading="lazy"></a><figcaption>Introdução, 2 · 1024×1024</figcaption></figure>
+<figure><a href="img/art/sinete_art_card_back.png"><img src="img/thumbs/sinete_art_card_back.jpg" alt="Verso da carta" loading="lazy"></a><figcaption>Verso da carta · 820×1200</figcaption></figure>
+</div></section>
+<section><h2>Logos</h2><div class="gallery logos">
+<figure class="logo"><a href="img/logo/sinete_logo.png"><img src="img/logo/sinete_logo.png" alt="Logo do Sinete, fundo transparente" loading="lazy"></a><figcaption>Logo do Sinete, fundo transparente · 616×597</figcaption></figure>
+<figure class="logo"><a href="img/logo/sinete_icon_512.png"><img src="img/logo/sinete_icon_512.png" alt="Ícone do app" loading="lazy"></a><figcaption>Ícone do app · 512×512</figcaption></figure>
+<figure class="logo"><a href="img/logo/sinete_banner_1024x500.png"><img src="img/logo/sinete_banner_1024x500.png" alt="Faixa" loading="lazy"></a><figcaption>Faixa · 1024×500</figcaption></figure>
+<figure class="logo"><a href="img/logo/inuman_games_logo.png"><img src="img/logo/inuman_games_logo.png" alt="Logo da Inuman Games, fundo transparente" loading="lazy"></a><figcaption>Logo da Inuman Games, fundo transparente · 850×1130</figcaption></figure>
+</div></section>
+<section class="cols2">
+  <div><h2>Estúdio e equipe</h2><p>A Inuman Games é um estúdio independente do Brasil.</p><dl class="team">
+<div><dt>Ideia, adaptação, código e produção</dt><dd>Rapha Gonçalves</dd></div>
+<div><dt>Roteiro e texto</dt><dd>Rapha Gonçalves e Rodrigo Gonçalves</dd></div>
+<div><dt>Design e direção de arte</dt><dd>TG Studio, sob direção de Thiago Paulino</dd></div>
+  </dl></div>
+  <div><h2>Contato</h2><p>Imprensa, criadores e chaves:<br><a class="mail" href="mailto:support@inuman.com.br">support@inuman.com.br</a></p></div>
+</section>
+<section class="based"><h2>Baseado em</h2>
+<p>Poictesme, a Irmandade do Garanhão de Prata e Horvendile são de James Branch Cabell (1879-1958), escritor de Richmond, na Virgínia. Poictesme é uma província que não está em mapa nenhum da França, e Cabell espalhou por 18 volumes a linhagem de Dom Manuel, que a governou. A Irmandade sai de The Silver Stallion, de 1926, e Horvendile atravessa esses livros sem envelhecer, imparcial por ofício. O mais lido deles, Jurgen, foi processado por obscenidade em Nova York em 1920, e o caso caiu dois anos depois. Cabell encheu os anos 1920 e depois foi esquecido. A obra dele está em domínio público nos Estados Unidos.</p>
+<p>A mecânica do Sinete vem de Hanamikoji, jogo de tabuleiro de Kota Nakayama, publicado pela EmperorS4, e das sete mini-expansões dele.</p>
+<p>A partilha de Poictesme é nossa, e também as cartas, os textos, os quatro níveis de máquina, o online e o Modo clássico, que sorteia a fórmula do Partidor a cada dia.</p>
+<p>Sinete é jogo independente. Não tem vínculo com Kota Nakayama nem com a EmperorS4, e nenhum dos dois o endossa. O nome Hanamikoji pertence a seus donos.</p>
+</section>
+</div>
+</div>
+<script>
+(function () {
+  var root = document.documentElement, bs = document.querySelectorAll("[data-set]");
+  function mark() {
+    bs.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.set === root.getAttribute("data-l"))); });
+  }
+  bs.forEach(function (b) {
+    b.addEventListener("click", function () {
+      root.setAttribute("data-l", b.dataset.set);
+      root.lang = b.dataset.set === "pt" ? "pt-BR" : "en";
+      history.replaceState(null, "", "#" + b.dataset.set);
+      mark();
+    });
+  });
+  mark();
+})();
+</script>
+</body>
+</html>
